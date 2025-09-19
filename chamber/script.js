@@ -23,7 +23,7 @@ listBtn.addEventListener("click", () => {
 
 // Fetch Members JSON
 async function getMembers() {
-  const response = await fetch("/members.json");
+  const response = await fetch("./members.json");
   const data = await response.json();
   displayMembers(data.members);
 }
