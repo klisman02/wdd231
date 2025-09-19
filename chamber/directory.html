@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber of Commerce Directory Page for [Your City/Region].">
+  <meta name="author" content="Klisman Gomes">
+  
+  <title>Chamber of Commerce - Directory</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Chamber of Commerce - Directory">
+  <meta property="og:description" content="Discover local businesses and organizations in our Chamber of Commerce Directory.">
+  <meta property="og:image" content="images/chamber-preview.png">
+  <meta property="og:url" content="https://seu-github-pages-url/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="menu" class="hidden">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="view-toggle">
+      <button id="grid-btn">Grid View</button>
+      <button id="list-btn">List View</button>
+    </section>
+
+    <section id="directory" class="grid">
+      <!-- Business cards generated with JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Chamber of Commerce</p>
+    <p>Contact: klisman.gomes.silva@gmail.com | + 55(11) 987101259</p>
+    <p>Developed by Klisman Gomes Barbosa da Silva | WDD 231</p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
