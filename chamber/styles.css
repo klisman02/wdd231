@@ -1,0 +1,305 @@
+/* Basic reset from normalize.css */
+
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #004080;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Mobile-first approach for the menu button */
+nav button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Mobile-first: Hide the navigation list by default */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; /* Centraliza menu no mobile */
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0.5rem 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.chamber-title {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* View toggle section styles */
+.view-toggle {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+#grid-btn, #list-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #004080;
+    background: #fff;
+    color: #004080;
+    border-radius: 5px;
+}
+
+#grid-btn:hover, #list-btn:hover {
+    background: #0d74d4;
+    color: #424141;
+    transition: .5s;
+}
+
+/* Grid and List view for the directory */
+#directory.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#directory.list {
+    display: block;
+    margin: 1rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Footer styles */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Hero section styles */
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.call-to-action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 90%; /* evita estouro em telas pequenas */
+}
+
+.call-to-action h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.call-to-action a,
+.call-to-action button {
+    background: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0.5rem;
+}
+
+.call-to-action a:hover,
+.call-to-action button:hover {
+    background: #043b75;
+    transition: .5s;
+}
+
+/* Styles for event and weather sections */
+.events-section,
+.weather-section,
+.spotlights-section {
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+    max-width: 95%;
+}
+
+.events-section h2, 
+.weather-section h2, 
+.event-card, 
+.weather-section {
+    text-align: center;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.forecast-card {
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+    background: white;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Styles for spotlights section */
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 600px) {
+    .spotlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0;
+        width: auto;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Ajustes extras para telas pequenas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.2rem;
+    }
+
+    .forecast-card {
+        width: 100%; /* full width no mobile */
+    }
+}
+
+@media (max-width: 400px) {
+    header h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+  .call-to-action a,
+  .call-to-action button {
+    display: block;        
+    margin: 0.5rem auto;   
+    width: fit-content; 
+  }
+}
+
+@media (max-width: 768px) {
+  main > section,
+  #directory,
+  .events-section,
+  .weather-section,
+  .spotlights-section {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 95%;
+      box-sizing: border-box;
+  }
+
+  .forecast-container {
+      justify-content: center; 
+  }
+
+  .spotlight-grid {
+      justify-items: center;
+  }
+}
