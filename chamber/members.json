@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Tech Solutions",
+      "address": "123 Main St, Cityville",
+      "phone": "(123) 456-7890",
+      "website": "https://techsolutions.com",
+      "image": "tech.png",
+      "membership": "Gold"
+    },
+    {
+      "name": "Green Farms",
+      "address": "456 Country Rd, Farmtown",
+      "phone": "(987) 654-3210",
+      "website": "https://greenfarms.com",
+      "image": "farm.jpg",
+      "membership": "Silver"
+    },
+    {
+      "name": "City Bank",
+      "address": "789 Finance Ave, Cityville",
+      "phone": "(555) 123-4567",
+      "website": "https://citybank.com",
+      "image": "bank.jpg",
+      "membership": "Gold"
+    },
+    {
+      "name": "Bright Future School",
+      "address": "101 Learning Ln, Schooltown",
+      "phone": "(333) 444-5555",
+      "website": "https://brightfuture.edu",
+      "image": "school.jpg",
+      "membership": "Member"
+    },
+    {
+      "name": "Healthy Life Clinic",
+      "address": "202 Wellness Blvd, Healthcity",
+      "phone": "(222) 777-8888",
+      "website": "https://healthylife.com",
+      "image": "clinic.png",
+      "membership": "Silver"
+    },
+    {
+      "name": "Sunrise Café",
+      "address": "303 Breakfast St, Foodtown",
+      "phone": "(444) 999-0000",
+      "website": "https://sunrisecafe.com",
+      "image": "cafe.png",
+      "membership": "Member"
+    },
+    {
+      "name": "Modern Fitness Gym",
+      "address": "404 Strength Ave, Fitcity",
+      "phone": "(111) 222-3333",
+      "website": "https://modernfitness.com",
+      "image": "gym.jpg",
+      "membership": "Gold"
+    }
+  ]
+}
